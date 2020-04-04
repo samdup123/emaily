@@ -13,7 +13,6 @@ passport.deserializeUser((id, done) => {
   User.findById(id).then((user) => done(null, user));
 });
 
-// something: AIzaSyCDCSOE1U5KnjUzOCGA6HgjiFF3bksNAzQ
 passport.use(
   new GoogleStrategy(
     {
